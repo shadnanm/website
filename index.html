@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -26,4 +29,104 @@
 	<meta name="robots" content="index,follow" />
 	<link rel="apple-touch-icon" type="image/png" href="https://shadnanm.com/wp-content/uploads/2019/03/Touch.jpg" />
 	<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- site Favicon -->
+    <link rel="icon" href="https://shadnanm.com/wp-content/uploads/2019/03/Icon.png" sizes="32x32" />
+
+    <!-- css All Plugins Files -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery.fancybox.min.css" />    
+
+    <!-- Main Style -->
+    <link rel="stylesheet" id="main_style" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
+
+<body class="body-bg">
+
+    <!-- On change section animation -->
+    <div id="overlay_shine"></div>
+
+    <!-- Header navigation section -->
+    <header>
+        <div class="sidebar-title">
+            <h5>Menu</h5>
+            <a href="javascript:void(0)" class="nav-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+        </div>
+        <nav class="ms-navigation">
+            <div>
+                <ul>
+                    <li><a href="javascript:void(0)" class="navs-link nav-home" data-section="ms-home"><i class="fa fa-home"></i><span>Home</span></a><span class="noty"><span>Home</span></span></li>
+                    <li><a href="https://shadnanm.com/" target="_blank" class="navs-link nav-about" data-section="ms-about-section"><i class="fa fa-globe"></i><span>Website</span></a><span class="noty"><span>Website</span></span></li>
+                    <li><a href="https://www.upwork.com/freelancers/_~01883ba015134024ee/" target="_blank" class="navs-link nav-experience" data-section="ms-experience-section"><i class="fa fa-layer-group"></i><span>Upwork</span></a><span class="noty"><span>Upwork</span></span></li>
+                    <li><a href="https://incometaxlawbd.com/" target="_blank" class="navs-link nav-portfolio" data-section="ms-portfolio-section"><i class="fas fa-code"></i><span>Web Dev</span></a><span class="noty"><span>Web Dev</span></span></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.nac.INCOMETAXBD" target="_blank" class="navs-link nav-news" data-section="ms-news-section"><i class="fas fa-mobile-screen-button"></i><span>App Dev</span></a><span class="noty"><span>App Dev</span></span></li>
+                    <li><a href="https://shadnanm.com/#contact" target="_blank" class="navs-link nav-contact" data-section="ms-contact-section"><i class="fa fa-envelope"></i><span>Contact</span></a><span class="noty"><span>Contact</span></span></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="ms-social">
+            <li><a class="ms-btn-1" href="https://www.facebook.com/shadnan.mahmud" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a class="ms-btn-1" href="https://x.com/ShadnanMahmud" target="_blank"><i class="fa fa-xmark" aria-hidden="true"></i></a></li>
+            <li><a class="ms-btn-1" href="https://www.instagram.com/shadnan.mahmud/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a class="ms-btn-1" href="https://www.linkedin.com/in/shadnan-mahmud/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			<li><a class="ms-btn-1" href="https://www.youtube.com/user/ShadnanMahmud" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+    </header>
+    <div class="header-overlay"></div>
+    <a href="javascript:void(0)" class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <!-- End Header navigation section -->
+
+    <!-- Home section -->
+    <section class="ms-home ms-slide home-section body-bg">
+        <div class="container-fluid p-0">
+            <div class="ms-row">
+                <div class="col-lg-6 col-md-12 border-content">
+                    <div class="profile-img main-bg-black">
+                        <div class="profile-detail">
+                            <img src="assets/img/profile.jpg" alt="profile" data-tilt>
+                            <ul class="ms-social">
+                                <li><a href="https://www.facebook.com/shadnan.mahmud" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://x.com/ShadnanMahmud" target="_blank"><i class="fa fa-xmark" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/shadnan.mahmud/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/shadnan-mahmud/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.youtube.com/user/ShadnanMahmud" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 border-content-color">
+                    <div class="ms-detail">
+                        <div class="info">
+                            <h1><span>SHADNAN MAHMUD</span></h1>
+                            <h3><strong>Inspector of Taxes, NBR</strong></h3>
+                            <p style="text-align: justify;"><span style="color:#000000;">I have completed my graduation from the University of Dhaka. I started my career as a Programmer on Upwork. Currently working as an Inspector of Taxes at National Board of Revenue, Ministry of Finance.</span></p>
+                            <a class="custom-btn ms-btn m-r-5px" href="https://shadnanm.com/" target="_blank">WEBSITE</a>
+                            <a class="custom-btn ms-btn-1 nav-about" href="https://shadnanm.com/#contact" target="_blank">CONTACT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Home section End -->
+
+
+    <!-- Theme Custom Cursors -->
+    <div class="ms-cursor"></div>
+    <div class="ms-cursor-2"></div>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/jquery.fancybox.min.js"></script>
+    <script src="assets/js/plugins/mixitup.min.js"></script>
+    <script src="assets/js/plugins/fontawesome.js"></script>
+    <script src="assets/js/plugins/tilt.jquery.js"></script>
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
