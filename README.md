@@ -1,0 +1,1 @@
+Welcome to the GitHub repository for my personal website. This repository hosts the files for my personal website, accessible at shadnan.com. The site is built using HTML, CSS & JavaScript. The repository is connected to my custom domain (shadnan.com) to provide a seamless and professional web presence.
