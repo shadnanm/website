@@ -2141,6 +2141,245 @@ li.mixitup-control-active {
   75% { transform: translateY(-3px); }
   100% { transform: translateY(0); }
 }
+/*===== Whatsapp direct chat css =====*/
+.ms-style {
+  display: inline-block;
+  position: fixed;
+  letter-spacing: 0.1px;
+  z-index: 13;
+}
+.ms-style .ms-button {
+  width: 36px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+}
+.ms-style .ms-button .whatsapp {
+  width: 23px;
+  height: 23px;
+  background-image: url(../images/common/whatsapp.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: table;
+  margin-right: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+  color: #2ab674;
+}
+.ms-style .ms-panel {
+  display: none;
+  margin-bottom: 5px;
+  width: 275px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.ms-style .ms-panel .ms-header {
+  padding: 12px 15px 15px;
+  text-align: center;
+  color: #fff;
+  background: #2ab674;
+}
+.ms-style .ms-panel .ms-body {
+  min-width: 250px;
+  white-space: nowrap;
+  list-style: none;
+  overflow-y: auto;
+}
+.ms-style .ms-header strong {
+  font-size: 15px;
+  line-height: 20px;
+}
+.ms-style .ms-header p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+}
+.ms-style .ms-list .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ms-style .ms-list .ms-img-cont {
+  position: relative;
+}
+.ms-style .ms-list .ms-user-img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.ms-style .ms-list .ms-status-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 1px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #a0a0a0;
+}
+.ms-style .ms-list .ms-online {
+  background-color: #2ab674;
+}
+.ms-style .ms-list .ms-offline {
+  background-color: #a0a0a0;
+}
+.ms-style .ms-list .ms-user-info {
+  margin-top: 0;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+.ms-style .ms-list .ms-user-info span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #555;
+}
+.ms-style .ms-list .ms-user-info p {
+  margin-bottom: 0;
+  color: #888;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 300;
+}
+.ms-style .ms-body:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.ms-style .ms-body:hover .ms-user-img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.ms-style .ms-body li {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  list-style-type: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.ms-style .ms-body li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.ms-style .ms-body li:hover {
+  background-color: rgba(42, 182, 116, 0.07);
+}
+
+.ms-right-bottom {
+  bottom: 15px;
+  right: 15px;
+  float: right;
+}
+.ms-right-bottom .ms-box {
+  padding: 0;  /** Add this padding css **/
+  background-color: #2ab674;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.ms-right-bottom .ms-box i {
+  font-size: 20px;
+  color: #fff;
+}
+.ms-right-bottom .ms-box:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes ms-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ms-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.rotateForward {
+  -webkit-animation-name: rotateF;
+          animation-name: rotateF;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotateF {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateF {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.rotateBackward {
+  -webkit-animation-name: rotateB;
+          animation-name: rotateB;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotateB {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateB {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 
 /** End Contact Section **/
 /*# sourceMappingURL=style.css.map */
